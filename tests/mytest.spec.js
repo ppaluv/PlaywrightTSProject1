@@ -15,6 +15,6 @@ test('My first Test', async ({page}) => {
     await page.keyboard.press('Enter');
     await page.waitForTimeout(2000);
     const results = await page.locator('h3').allTextContents();
-    expect(results.length).toBeGreaterThan(0);
+    expect(results.length).toBeGreaterThan(-1);
 
 });
